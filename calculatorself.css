@@ -34,15 +34,31 @@ body::before{
   padding: 20px;
   border-radius: 10px; 
 }
-button{
-  border: none;
+.calculator form input, button{
+  border: 10;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: transparent; 
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+.del{
+  /* border: none; */
   cursor: pointer;
   appearance: none;
-  /* background-color: inherit; */
+  background-color: white;
   transition: transform .7s ease-in-out;
   /* margin-left:10px; */
-
+  background-size: cover;
+  
 }
-button:hover{
+.del:hover{
   transform: rotate(360deg);
+}
+.gmb{
+
 }
