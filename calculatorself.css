@@ -32,6 +32,17 @@ body::before{
 .calculator{
   background-color: #253542;
   padding: 20px;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
+}
+button{
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  /* background-color: inherit; */
+  transition: transform .7s ease-in-out;
+  /* margin-left:10px; */
+
+}
+button:hover{
+  transform: rotate(360deg);
 }
