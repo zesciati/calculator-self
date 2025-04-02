@@ -11,13 +11,13 @@
     <div class="calculator">
       <form>
         <div class="display">
-          <input type="text" name="display" >
+          <input type="text" name="display" id="display" >
         </div>
         <div>
-          <input type="button" value="AC">
-          <button class="del"><img class="gmb" src="img/noun-delete-4023902.svg" alt=""></button>
-          <input type="button" value="%" onclick="display.value='%'">  
-          <input type="button" value="÷" onclick="display.value='/'">  
+          <input type="button" value="AC" onclick="display.value=''">
+          <input type="button" value="DEL" onclick="deleteLastCharacter()">
+          <input type="button" value="%" onclick="display.value+='%'">  
+          <input type="button" value="÷" onclick="display.value+='/'">  
         </div>
         <div>
           <input type="button" value="7" onclick="display.value +='7'">
@@ -45,5 +45,13 @@
       </form>
     </div>
   </div>
+
+  <script>
+  function deleteLastCharacter() {
+  var display = document.getElementById('display');
+  display.value = display.value.toString().slice(0, -1);
+  }
+
+  </script>
 </body>
 </html>
